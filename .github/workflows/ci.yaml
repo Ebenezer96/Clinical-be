@@ -3,6 +3,8 @@ name: CI
 on:
     pull_request:
         branches: [main]
+    push:
+        branches: [main]
 
 jobs:
     lint:
@@ -10,13 +12,13 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - uses: astral-sh/setup-uv@v4
+            - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
               with:
                   enable-cache: true
                   github-token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Install dependencies
-              run: uv sync --dev
+              run: uv sync --dev --frozen
 
             - name: Lint with Ruff
               run: uv run ruff check --output-format=github .
@@ -44,13 +46,13 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - uses: astral-sh/setup-uv@v4
+            - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
               with:
                   enable-cache: true
                   github-token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Install dependencies
-              run: uv sync --dev
+              run: uv sync --dev --frozen
 
             - name: Run migrations
               env:

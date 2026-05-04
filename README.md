@@ -29,7 +29,7 @@ AI-powered laboratory result interpretation and verified doctor second opinions 
 This section shows the main folders and files in the repository so you can
 find API routes, configuration, migrations, and tests quickly.
 
-```
+```text
 .
 ├── alembic/
 │   ├── env.py
