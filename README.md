@@ -24,6 +24,34 @@ AI-powered laboratory result interpretation and verified doctor second opinions 
 - **Doctors**: Verified medical professionals providing second opinions
 - **Super Admin**: Credential verification, case monitoring, dispute management
 
+## Project structure
+
+This section shows the main folders and files in the repository so you can
+find API routes, configuration, migrations, and tests quickly.
+
+```
+.
+├── alembic/
+│   ├── env.py
+│   ├── script.py.mako
+│   └── versions/
+├── app/
+│   ├── api/
+│   │   └── v1/
+│   │       ├── endpoints/
+│   │       └── router.py
+│   ├── core/
+│   ├── db/
+│   ├── models/
+│   ├── schemas/
+│   ├── services/
+│   └── main.py
+├── tests/
+├── alembic.ini
+├── pyproject.toml
+└── README.md
+```
+
 ## Contributing
 
 1. Fork the repository and create your feature branch (`git checkout -b feature/your-feature`)
