@@ -58,9 +58,9 @@ find API routes, configuration, migrations, and tests quickly.
 2. Install dependencies: `uv sync`
 3. Run tests before committing: `uv run pytest`
 4. Install pre-commit hook (`uv run pre-commit install`)
-4. Commit your changes (`git commit -m 'Add feature'`)
-5. Push to your branch (`git push origin feature/your-feature`)
-6. Open a Pull Request
+5. Commit your changes (`git commit -m 'Add feature'`)
+6. Push to your branch (`git push origin feature/your-feature`)
+7. Open a Pull Request
 
 ### Guidelines
 
