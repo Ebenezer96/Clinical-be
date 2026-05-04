@@ -10,4 +10,4 @@ app.include_router(api_router, prefix=settings.API_V1_PREFIX)
 
 @app.get("/")
 def root() -> dict[str, str]:
-    return {"message": f"{settings.PROJECT_NAME} is running"}
+	return {"message": f"{settings.PROJECT_NAME} is running"}
