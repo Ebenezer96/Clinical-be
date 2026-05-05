@@ -1,4 +1,4 @@
-# Clinical Lab Insight
+# Clinsights
 
 AI-powered laboratory result interpretation and verified doctor second opinions for Nigerians.
 
