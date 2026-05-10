@@ -6,6 +6,7 @@ from app.schemas.ai_interpretation import (
 )
 from app.schemas.auth import (
 	ForgotPasswordRequest,
+	GoogleAuthData,
 	LoginRequest,
 	OtpDispatchResponse,
 	ResendOtpRequest,
@@ -22,22 +23,22 @@ from app.schemas.user import GoogleUserCreate, UserBase, UserCreate, UserRespons
 from app.schemas.waitlist import WaitlistCreate, WaitlistResponse
 
 __all__ = [
-	# User
-	"UserBase",
-	"UserCreate",
-	"GoogleUserCreate",
-	"UserUpdate",
-	"UserResponse",
-	# Auth (OTP)
+	# Auth
+	"GoogleAuthData",
 	"SignupRequest",
 	"LoginRequest",
 	"VerifyOtpRequest",
 	"ResendOtpRequest",
 	"TokenResponse",
 	"OtpDispatchResponse",
-	# Auth (password reset)
 	"ForgotPasswordRequest",
 	"ResetPasswordRequest",
+	# User
+	"UserBase",
+	"UserCreate",
+	"GoogleUserCreate",
+	"UserUpdate",
+	"UserResponse",
 	# MedicalCase
 	"MedicalCaseBase",
 	"MedicalCaseCreate",
