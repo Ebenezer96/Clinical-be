@@ -4,7 +4,16 @@ from app.schemas.ai_interpretation import (
 	AIInterpretationResponse,
 	AIInterpretationUpdate,
 )
-from app.schemas.auth import ForgotPasswordRequest, ResetPasswordRequest
+from app.schemas.auth import (
+	ForgotPasswordRequest,
+	LoginRequest,
+	OtpDispatchResponse,
+	ResendOtpRequest,
+	ResetPasswordRequest,
+	SignupRequest,
+	TokenResponse,
+	VerifyOtpRequest,
+)
 from app.schemas.chat import ChatBase, ChatCreate, ChatResponse
 from app.schemas.lab_result import LabResultBase, LabResultCreate, LabResultResponse, LabResultUpdate
 from app.schemas.medical_case import MedicalCaseBase, MedicalCaseCreate, MedicalCaseResponse, MedicalCaseUpdate
@@ -16,11 +25,19 @@ __all__ = [
 	# User
 	"UserBase",
 	"UserCreate",
-	"ForgotPasswordRequest",
-	"ResetPasswordRequest",
 	"GoogleUserCreate",
 	"UserUpdate",
 	"UserResponse",
+	# Auth (OTP)
+	"SignupRequest",
+	"LoginRequest",
+	"VerifyOtpRequest",
+	"ResendOtpRequest",
+	"TokenResponse",
+	"OtpDispatchResponse",
+	# Auth (password reset)
+	"ForgotPasswordRequest",
+	"ResetPasswordRequest",
 	# MedicalCase
 	"MedicalCaseBase",
 	"MedicalCaseCreate",
